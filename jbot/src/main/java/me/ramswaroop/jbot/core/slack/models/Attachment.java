@@ -34,6 +34,7 @@ public class Attachment {
     private String ts;
     @JsonProperty("mrkdwn_in")
     private List<String> markdownIn;
+    private List<Action> actions;
 
     public String getFallback() {
         return fallback;
@@ -161,6 +162,14 @@ public class Attachment {
 
     public void setMarkdownIn(List<String> markdownIn) {
         this.markdownIn = markdownIn;
+    }
+
+    public List<Action> getActions() {
+        return actions;
+    }
+
+    public void setActions(List<Action> actions) {
+        this.actions = actions;
     }
 }
 
