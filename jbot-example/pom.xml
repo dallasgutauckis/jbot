@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>me.ramswaroop.jbot</groupId>
+        <groupId>com.dallasgutauckis.jbot</groupId>
         <artifactId>jbot-parent</artifactId>
         <version>4.1.1-SNAPSHOT</version>
     </parent>
@@ -17,7 +17,7 @@
     
     <dependencies>
         <dependency>
-            <groupId>me.ramswaroop.jbot</groupId>
+            <groupId>com.dallasgutauckis.jbot</groupId>
             <artifactId>jbot</artifactId>
             <version>4.1.1-SNAPSHOT</version>
         </dependency>

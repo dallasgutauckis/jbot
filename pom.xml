@@ -9,7 +9,7 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
     
-    <groupId>me.ramswaroop.jbot</groupId>
+    <groupId>com.dallasgutauckis.jbot</groupId>
     <artifactId>jbot-parent</artifactId>
     <version>4.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -30,6 +30,13 @@
             <email>hi at ramswaroop.me</email>
             <organization>Ramswaroop.me</organization>
             <organizationUrl>http://www.ramswaroop.me</organizationUrl>
+        </developer>
+        <developer>
+            <id>dallas</id>
+            <name>Dallas Gutauckis</name>
+            <email>dallas at gutauckis.com</email>
+            <organization>dallasgutauckis.com</organization>
+            <organizationUrl>http://dallasgutauckis.com</organizationUrl>
         </developer>
     </developers>
 
