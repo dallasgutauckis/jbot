@@ -7,10 +7,11 @@ import java.util.List;
 public class SelectAction extends Action {
     @JsonProperty("data_source")
     private String dataSource;
+
     private List<Option> optiions;
 
     {
-        setType("select");
+        setType(Type.SELECT);
     }
 
     public String getDataSource() {

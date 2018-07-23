@@ -34,6 +34,8 @@ public class Attachment {
     private String ts;
     @JsonProperty("mrkdwn_in")
     private List<String> markdownIn;
+    @JsonProperty("callback_id")
+    private String callbackId;
     private List<Action> actions;
 
     public String getFallback() {
@@ -170,6 +172,14 @@ public class Attachment {
 
     public void setActions(List<Action> actions) {
         this.actions = actions;
+    }
+
+    public String getCallbackId() {
+        return callbackId;
+    }
+
+    public void setCallbackId(String callbackId) {
+        this.callbackId = callbackId;
     }
 }
 

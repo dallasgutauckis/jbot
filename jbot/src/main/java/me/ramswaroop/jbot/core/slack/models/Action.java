@@ -1,13 +1,13 @@
 package me.ramswaroop.jbot.core.slack.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Action {
     private String name;
-    /**
-     * Possible values: button, select
-     */
-    private String type; // TODO is it possible to make this an enum in this project?
+
+    private Type type;
+
     private String text;
-    private String style;
 
     public String getName() {
         return name;
@@ -15,14 +15,6 @@ public class Action {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    void setType(String type) {
-        this.type = type;
     }
 
     public String getText() {
@@ -33,11 +25,18 @@ public class Action {
         this.text = text;
     }
 
-    public String getStyle() {
-        return style;
+    public Type getType() {
+        return type;
     }
 
-    public void setStyle(String style) {
-        this.style = style;
+    void setType(Type type) {
+        this.type = type;
+    }
+
+    public enum Type {
+        @JsonProperty("button")
+        BUTTON,
+        @JsonProperty("select")
+        SELECT
     }
 }
